@@ -1,0 +1,84 @@
+// border
+@each $key, $value in $border-widths {
+  @if $key != 0 {
+    .border-#{$key} {
+      border: $border-color $value solid;
+    }
+    .border-top-#{$key} {
+      border-top: $border-color $value solid;
+    }
+    .border-bottom-#{$key} {
+      border-bottom: $border-color $value solid;
+    }
+    .border-left-#{$key} {
+      border-left: $border-color $value solid;
+    }
+    .border-right-#{$key} {
+      border-right: $border-color $value solid;
+    }
+  } @else {
+    .border-0 {
+      border: none;
+    }
+    .border-top-0 {
+      border-top: none;
+    }
+    .border-bottom-0 {
+      border-bottom:  none;
+    }
+    .border-left-0 {
+      border-left:  none;
+    }
+    .border-right-0 {
+      border-right:  none;
+    }
+  }
+}
+
+// border color
+@each $key, $value in $theme-colors {
+  .border-#{$key} {
+    border-color: $value;
+  }
+}
+
+// border radius
+.rounded {
+  border-radius: $border-radius;
+}
+.rounded-sm {
+  border-radius: $border-radius-sm;
+}
+.rounded-lg {
+  border-radius: $border-radius-lg;
+}
+
+.rounded-top {
+  border-top-right-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+}
+.rounded-bottom {
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}
+.rounded-right {
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+.rounded-left {
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}
+
+// 圓形
+.rounded-circle {
+  border-radius: 50%;
+}
+//橢圓形
+.rounded-pill {
+  border-radius: $border-radius-pill;
+}
+//正方形
+.rounded-0 {
+  border-radius: 0;
+}

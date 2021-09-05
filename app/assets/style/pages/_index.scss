@@ -1,0 +1,117 @@
+.header {
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  min-height: 52.5rem;
+  background-position: center center;
+  @include mobile {
+    background-image: url("../images/banner-sm.png");
+    min-height: 24.625rem;
+  }
+  &__content {
+    min-height: 52.5rem;
+    @include mobile {
+      min-height: 24.625rem;
+    }
+  }
+}
+
+//專業
+.professional__item {
+  &__photo {
+    height: 6.25rem;
+    width: 6.25rem;
+   display: inline-block;
+  }
+  &__title {
+    font-weight: 500;
+    color: $secondary;
+  }
+  &__list {
+    color: $black;
+    text-align: left;
+  }
+}
+//經典
+.classic {  
+  &__title {
+    text-align: center;
+  }
+  &__banner {
+    &__link {
+      position: relative;
+      &:hover {
+        background: $gray-300;
+      }
+      @include mobile {
+        max-height: 8.375rem;
+      }
+    }
+    &__item {
+      @include mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    &__photo {
+      margin-right: 0.5rem;
+    }
+    &__text {
+      font-weight: 900;
+      font-style: italic;
+      font-size: 3rem;
+      color: $primary;
+      @include pad {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+//聯名
+.jointName {
+  background: url("../images/bg.png") center no-repeat;
+  background-size: cover;
+  @include pad {
+    min-height: 28.25rem;
+  }
+  @include mobile {
+    min-height: 45rem;
+  }
+  &__link {
+    position: relative;
+    &:hover {
+      opacity: 70%;
+    }
+    &__text {
+      position: absolute;
+      font-weight: bold;
+      color: $primary;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255,255,255,0.3);
+    }   
+  }
+}
+//推薦
+.recommed {
+  &__card {
+    min-height: 28.75rem;
+    border: 1px solid $gray-200;
+    box-shadow: 0 2px 6px 0 $muted-dark;
+    border-radius: 4px;
+    &__photo {
+      width: 100%;
+      min-height: 16rem;
+    }
+    &__list {
+      min-height: 12.75rem;
+    }
+  }
+}

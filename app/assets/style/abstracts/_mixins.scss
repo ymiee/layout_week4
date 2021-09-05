@@ -1,0 +1,89 @@
+// media-generate
+@mixin media-generate($breakpointsKey, $breakpointsVal) {
+  @if $breakpointsVal == 0 {
+    @content;
+  } @else {
+    @media (max-width: $breakpointsVal) {
+      @content;
+    }
+  }
+}
+@mixin desktop-m {
+  @media (max-width: $breakpoint-xl){
+    @content;
+  }      
+}
+@mixin desktop-s {
+  @media (max-width: $breakpoint-lg){
+    @content;
+  }
+}
+@mixin pad {
+  @media (max-width: $breakpoint-md){
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: $breakpoint-sm){
+    @content;
+  }
+}
+@mixin mobile-s {
+  @media (max-width: $breakpoint-xs){
+    @content;
+  }
+}
+
+// space-generate
+@mixin spacies-generate($pro, $side, $spaceVal) {
+  @if $pro =='m' {
+    @if $side == '' {
+      margin: $spaceVal;
+    }
+    @if $side == 't' {
+      margin-top: $spaceVal;
+    }
+    @if $side == 'e' {
+      margin-right: $spaceVal;
+    }
+    @if $side == 'b' {
+      margin-bottom: $spaceVal;
+    }
+    @if $side == 's' {
+      margin-left: $spaceVal;
+    }
+    @if $side == 'x' {
+      margin-left: $spaceVal;
+      margin-right: $spaceVal;
+    }
+    @if $side == 'y' {
+      margin-top: $spaceVal;
+      margin-bottom: $spaceVal;
+    }
+  }
+  @if $pro =='p' {
+    @if $side == '' {
+      padding: $spaceVal;
+    }
+    @if $side == 't' {
+      padding-top: $spaceVal;
+    }
+    @if $side == 'e' {
+      padding-right: $spaceVal;
+    }
+    @if $side == 'b' {
+      padding-bottom: $spaceVal;
+    }
+    @if $side == 's' {
+      padding-left: $spaceVal;
+    }
+    @if $side == 'x' {
+      padding-left: $spaceVal;
+      padding-right: $spaceVal;
+    }
+    @if $side == 'y' {
+      padding-top: $spaceVal;
+      padding-bottom: $spaceVal;
+    }
+  }
+}

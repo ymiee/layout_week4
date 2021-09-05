@@ -1,0 +1,14 @@
+@each $key, $value in $breakpoints {
+  $infix: breakpoint-infix($key, $value );
+  @include media-generate($key, $value) {
+    @each $pro in $spacies-properties {
+      @each $side in $spacies-sides {
+        @each $spaceKey, $spaceVal in $spacies {
+          .#{$pro}#{$side}#{$infix}-#{$spaceKey} {
+            @include spacies-generate($pro, $side, $spaceVal);
+          }
+        }
+      }  
+    }
+  }
+}

@@ -1,0 +1,160 @@
+// theme-color
+$primary: #AA0601;
+$secondary: #650300;
+$third: #FBF2F2;
+$muted: #5F3E2D;
+$muted-light: #B75929;
+$muted-dark: #00000029;
+$danger: #9F1213;
+$dark: #0A0A0A;
+$light: #00000020;
+$black: #000000;
+$white: #ffffff;
+$gray-100: #FBF2F2;
+$gray-200: #DEE2E6;
+$gray-300: #707070;
+$gray-400: #DCDCDC;
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'third': $third,  
+  'muted': $muted,
+  'muted-light': $muted-light,
+  'muted-dark': $muted-dark,
+  'danger': $danger,
+  'dark': $dark,
+  'light': $light,
+  'black': $black,
+  'white': $white,
+);
+
+//font-size
+$font-base: 1rem;
+
+$font-sizes: (
+1: $font-base * 4.5,    //72px
+2: $font-base * 4,      //64px
+3: $font-base * 3,      //48px
+4: $font-base * 2.625,  //42px
+5: $font-base * 2.25,   //36px
+6: $font-base * 2,      //32px
+7: $font-base * 1.5,    //24px
+8: $font-base * 1.25,   //20px
+9: $font-base * 1.125,  //18px
+10: $font-base,
+11: $font-base * 0.875, //14px
+);
+
+// space
+$space-base: 1rem;
+
+$spacies: (
+  0: 0,
+  1: $space-base * 0.25,    // 4
+  2: $space-base * 0.375,   // 6
+  3: $space-base * 0.5,     // 8
+  4: $space-base * 0.625,   //10
+  5: $space-base * 0.75,    //12 
+  6: $space-base * 0.875,   //14
+  7: $space-base,           //16
+  8: $space-base * 1.125,   //18
+  9: $space-base * 1.25,    //20
+  10: $space-base * 1.5,    //24
+  11: $space-base * 1.75,   //28
+  12: $space-base * 1.875,  //30
+  13: $space-base * 2,      //32
+  14: $space-base * 2.25,   //36
+  15: $space-base * 2.375,  //38
+  16: $space-base * 2.5,    //40
+  17: $space-base * 3,      //48
+  18: $space-base * 3.625,  //58
+  19: $space-base * 3.75,   //60
+  20: $space-base * 4.25,   //68
+  21: $space-base * 4.5,    //72
+  22: $space-base * 5,      //80
+  23: $space-base * 6.25,   //100
+  24: $space-base * 6.75,   //108
+  25: $space-base * 10,     //160
+);
+$spacies-properties: 'm', 'p';
+$spacies-sides: '', 't', 'e', 'b', 's', 'x', 'y';
+
+// grid
+$breakpoint-md: 1200px;
+$breakpoint-sm: 768px;
+
+$breakpoints: (
+  lg: 0,
+  md: 1200px,
+  sm: 768px,
+);
+
+// $breakpoints: (
+//   xl: 0
+//   lg: 992px,
+//   md: 768px,
+//   sm: 576px,
+//   xs: 375px,
+// );
+
+$gutter: 30px;
+$grid-num: 12;
+
+$container-max-widths: (
+  lg: 1100px,
+  md: 690px,
+  sm: 375px,
+  // sm: 345px,
+);
+
+// font
+$font-family: 'Noto Sans TC','Roboto',sans-serif;
+
+// link
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+// font weight
+$font-weight: (
+  thin: 100,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  bold: 700,
+  black: 900,
+);
+
+// line-height
+$line-height-base: 1.5;
+$line-height-sm: 1.25rem;
+$line-height-md: 1.75rem;
+$line-height-md: 2rem;
+
+//// sizing
+$sizing: (
+  20: 20%,
+  50: 50%,
+  80: 80%,
+  100: 100%,
+  auto: auto,
+);
+
+// border
+$border-widths: (
+  0: 0,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+);
+
+$border-color: $muted-light;
+
+$border-radius: 0.25rem;
+$border-radius-sm: 0.2rem;
+$border-radius-lg: 0.3rem;
+$border-radius-pill: 50rem;
